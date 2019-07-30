@@ -84,10 +84,17 @@ console.log(executiveSummary('URGENT: the lobby is rapidly filling'));
 //   }
 // ];
 
-// function removePartyKillers(playlist) {
-
-
-// }
+function removePartyKillers(playlist) {
+    // 8 * 60 = 480seconds to compare durationInSeconds of songs
+    const measureTime = 480;
+    let arrayLongSongs =[];
+    playlist.forEach(song => {
+       if(song.durationInSeconds <= 480){
+            arrayLongSongs.push(song)
+       };
+    });    
+    return arrayLongSongs
+}
 
 // Exercises 6
 
@@ -96,7 +103,6 @@ function onlyPayForHealthyThings(foodList) {
   foodList.forEach(element => {
     if (typeof element ==='object'){
       value = element['nutritionalValue'];
-      console.log(value)
       if (value['lowSugar']==='true' && value['lowSodium']==='true'){
         priceT = element['price'];
         sumPdtos += priceT
