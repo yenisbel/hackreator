@@ -204,6 +204,8 @@ function renderInfoNeatly(anotherPerson){
   let firstName = anotherPerson.name.first;
   let lastName = anotherPerson.name.last;
   let monthBirth = anotherPerson.birthDay.month;
+  // let personBirthday = getNameAndBirthday(anotherPerson);
+  // return titleCase(personBirthday)
   return `${firstName[0].toUpperCase() + firstName.slice(1).toLowerCase()} ${lastName[0].toUpperCase() + lastName.slice(1).toLowerCase()}: ${monthBirth[0].toUpperCase() + monthBirth.slice(1).toLowerCase()} ${anotherPerson.birthDay.day}, ${anotherPerson.birthDay.year}`
 };
 console.log(renderInfoNeatly(anotherPerson))
