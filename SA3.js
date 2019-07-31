@@ -156,12 +156,6 @@ function removeMostExpensive(arry) {
     return arryLessExpensive
 }
 
-
-
-
-
-
-
 console.log(removeMostExpensive(shoppingList));
 
 /*resultArry[
