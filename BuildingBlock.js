@@ -81,6 +81,7 @@ console.log(dogsIWouldPet("I do not like dogs"));
 // function which takes in a height (number) in inches, and returns true or falsei f the input is greater than or equal to 48
 function isTallEnough (height) {
   return height >=48 ? true : false
+  // return height >= 48
 }
 
 console.log(isTallEnough(72)); //true
@@ -128,3 +129,16 @@ function listLengthOfAllWords(array) {
   return array
 }
 console.log(listLengthOfAllWords(['hello', 'world', 'I', 'can', 'code'])); //[5, 5, 1, 3, 4];
+
+for (let i = 10; i < 15; i++) {
+  console.log(i); 
+}
+
+switch (key) {
+  case value:
+    
+    break;
+
+  default:
+    break;
+}
